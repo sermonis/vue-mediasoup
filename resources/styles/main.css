@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* 隐藏浏览器滚动条 */
+  .video-other {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  .video-other::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  .header {
+    @apply h-12 flex justify-between items-center
+  }
+  .videos {
+    @apply h-videos-sm md:h-videos-md grid grid-cols-1 gap-2 md:grid-cols-4 md:gap-4 content-baseline
+  }
+  .footer {
+    @apply h-12 md:h-20 flex gap-2 md:gap-4 justify-center items-center
+  }
+
+  /*header*/
+  .header .state {
+    @apply bg-gray-500 backdrop-opacity-60 rounded-full h-5 flex items-center p-1
+  }
+  .header .state .connecting,
+  .header .state .connected {
+    @apply relative flex h-3 w-3
+  }
+  .header .state .ping {
+    @apply animate-ping absolute inline-flex h-full w-full rounded-full opacity-75
+  }
+  .header .state .dot {
+    @apply relative inline-flex rounded-full h-3 w-3
+  }
+  .header .state .connecting .ping {
+    @apply bg-orange-400
+  }
+  .header .state .connecting .dot {
+    @apply bg-orange-500
+  }
+  .header .state .connected .ping,
+  .header .state .closed .ping {
+    @apply hidden
+  }
+  .header .state .connected .dot {
+    @apply bg-green-600
+  }
+  .header .state .closed .dot {
+    @apply bg-gray-600
+  }
+  .header .state .txt {
+    @apply mx-2 text-xs text-white
+  }
+  .header .title {
+    @apply text-sm text-white
+  }
+  .header .qrcode img {
+    @apply w-6 h-6
+  }
+
+  /*videos*/
+  .video-main {
+    @apply h-72 md:h-videos-md md:col-span-3
+  }
+  .video-main .video {
+    @apply h-full
+  }
+  .video-main video {
+    @apply w-full h-full rounded-md
+  }
+  .video-other {
+    @apply grid grid-cols-2 gap-2 md:grid-cols-1 md:gap-4 overflow-y-auto content-baseline
+  }
+  .video-other .video {
+    @apply w-full h-32 md:h-52
+  }
+  .video-other video {
+    @apply w-full h-full rounded-md
+  }
+  .video {
+    @apply relative w-full bg-slate-700 bg-[url('@/assets/buddy.svg')] bg-video bg-center bg-no-repeat rounded-md
+  }
+  .video .micro {
+    @apply absolute left-0 bottom-0 right-0 h-1
+  }
+  .video .username {
+    @apply absolute left-2 bottom-3 px-3 py-0.5 text-sm text-white backdrop-opacity-10 backdrop-invert bg-black/30 rounded-2xl
+  }
+  .video .micro .level {
+    @apply h-full rounded-md bg-orange-400
+  }
+  .video .micro .level.level-0 {
+    @apply w-0
+  }
+  .video .micro .level.level-1 {
+    @apply w-1/10
+  }
+  .video .micro .level.level-2 {
+    @apply w-1/5
+  }
+  .video .micro .level.level-3 {
+    @apply w-3/10
+  }
+  .video .micro .level.level-4 {
+    @apply w-2/5
+  }
+  .video .micro .level.level-4 {
+    @apply w-2/5
+  }
+  .video .micro .level.level-5 {
+    @apply w-1/2
+  }
+  .video .micro .level.level-6 {
+    @apply w-3/5
+  }
+  .video .micro .level.level-7 {
+    @apply w-7/10
+  }
+  .video .micro .level.level-8 {
+    @apply w-4/5
+  }
+  .video .micro .level.level-9 {
+    @apply w-9/10
+  }
+  .video .micro .level.level-10 {
+    @apply w-full
+  }
+
+  /*footer*/
+  .footer button {
+    @apply w-8 h-8 md:w-10 md:h-10 rounded-lg bg-gray-500
+  }
+  .footer button.exit {
+    @apply bg-red-500
+  }
+  .footer button img {
+    @apply w-6 h-6 mx-auto
+  }
+}
