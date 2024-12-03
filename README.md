@@ -4,6 +4,12 @@ A vue3 demo application of [mediasoup](https://mediasoup.org) **v3**
 
 It's not perfect yet, and hopefully someone who can do it will help perfect it
 
+## Demo screenshots
+
+![PC](resources/assets/pc.png)
+
+![Mobile](resources/assets/mobile.png)
+
 ## Configuration via query parameters
 
 By adding query parameters into the URL you can set certain settings of the application:
@@ -54,7 +60,7 @@ cd mediasoup-vue
 - Copy `config.example.js` as `config.js` and customize it for your scenario:
 
 ```shell
-cp config.example.js config.js
+cp server/config.example.js server/config.js
 ```
 
 - Install nodejs dependencies

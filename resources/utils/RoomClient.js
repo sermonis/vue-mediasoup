@@ -143,9 +143,7 @@ export default class RoomClient {
 
     // Protoo URL.
     // @type {String}
-    // this._protooUrl = getProtooUrl({roomId, peerId, consumerReplicas});
-    this._protooUrl = `wss://192.168.0.100:4443/?roomId=${roomId}&peerId=${peerId}&consumerReplicas=${consumerReplicas}`;
-    // this._protooUrl = `wss://www.mediasoup-vue.box/ws/?roomId=${roomId}&peerId=${peerId}&consumerReplicas=${consumerReplicas}`;
+    this._protooUrl = `wss://${window.location.hostname}:4443/?roomId=${roomId}&peerId=${peerId}&consumerReplicas=${consumerReplicas}`;
 
     // protoo-client Peer instance.
     // @type {protooClient.Peer}

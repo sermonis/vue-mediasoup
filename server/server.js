@@ -13,6 +13,8 @@ import interactiveClient from "./utils/interactiveClient.js";
 
 import config from "./config.js";
 
+console.log('config.js:\n%s', JSON.stringify(config, null, '  '));
+
 const queue = new AwaitQueue();
 
 const rooms = new Map();
