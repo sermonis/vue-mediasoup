@@ -19,8 +19,10 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     https: {
-      key: fs.readFileSync('server/ssl/socket.key'),
-      cert: fs.readFileSync('server/ssl/socket.crt'),
+    //   key: fs.readFileSync('server/ssl/socket.key'),
+    //   cert: fs.readFileSync('server/ssl/socket.crt'),
+      key: fs.readFileSync('server/ssl/localhost.key'),
+      cert: fs.readFileSync('server/ssl/localhost.crt'),
     }
   },
   build: {
@@ -28,7 +30,8 @@ export default defineConfig({
     minify: 'esbuild',
   },
   esbuild: {
-    // 生产环境移除console，保留错误
+    // Remove the console from the production
+    // environment and keep the error
     drop: ['debugger'],
     pure: ['console.log', 'console.info']
   },
