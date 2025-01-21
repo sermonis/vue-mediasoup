@@ -4,33 +4,19 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "server": "node server/server.js"
+    "setup:server": "cd server && yarn",
+    "setup:client": "cd client && yarn",
+    "setup": "yarn setup:server && yarn setup:client",
+    "dev:server": "cd server && yarn dev",
+    "dev:client": "cd client && yarn dev",
+    "dev:todo:1": "concurrently 'yarn dev:server' && 'yarn dev:client'",
+    "dev:todo:2": "yarn dev:server; yarn dev:client"
   },
-  "dependencies": {
-    "pinia": "^2.2.6",
-    "vue": "^3.5.12"
+  "engines": {
+    "node": ">=20"
   },
+  "dependencies": {},
   "devDependencies": {
-    "@sitespeed.io/throttle": "^5.0.1",
-    "@vitejs/plugin-vue": "^5.1.4",
-    "autoprefixer": "^10.4.20",
-    "awaitqueue": "^3.0.2",
-    "body-parser": "^1.20.3",
-    "colors": "^1.4.0",
-    "express": "^4.21.1",
-    "face-api.js": "^0.22.2",
-    "hark": "^1.2.3",
-    "js-cookie": "^3.0.5",
-    "mediasoup": "^3.15.2",
-    "mediasoup-client": "^3.7.18",
-    "pidusage": "^3.0.2",
-    "postcss": "^8.4.49",
-    "protoo-client": "^4.0.6",
-    "protoo-server": "^4.0.6",
-    "tailwindcss": "^3.4.15",
-    "vite": "^5.4.10"
+    "concurrently": "^9.1.2"
   }
 }

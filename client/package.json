@@ -11,6 +11,9 @@
     "start": "vite preview",
     "preview": "vite preview"
   },
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
     "mediasoup-client": "^3.8.1",
     "pinia": "^2.3.1",
