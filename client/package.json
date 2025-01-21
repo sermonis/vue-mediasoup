@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "type": "module",
-  "description": "SFU client", 
-  "author": "Alexey Pozdnyakov",
+  "description": "SFU client",   
   "license": "MIT",
   "scripts": {
     "dev": "vite",

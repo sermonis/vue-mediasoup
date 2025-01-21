@@ -5,7 +5,6 @@
   "type": "module",
   "description": "SFU server",
   "main": "index.js",
-  "author": "Alexey Pozdnyakov",
   "license": "MIT",
   "scripts": {
     "dev:todo": "vite",

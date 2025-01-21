@@ -2,7 +2,7 @@
 .vscode
 /node_modules
 package-lock.json
-/server/config.js
+/config.js
 *.log
 test.*
 /public
