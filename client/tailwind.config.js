@@ -2,7 +2,8 @@
 export default {
   content: [
     "./index.html",
-    "./resources/**/*.{vue,js,css,svg}",
+    "./**/*.{vue,js,css,svg}",
+	"!./node_modules"
   ],
   theme: {
     extend: {

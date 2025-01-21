@@ -19,8 +19,10 @@ const config = {
     tls: {
     //   cert: process.env.HTTPS_CERT_FULLCHAIN || 'server/ssl/socket.crt',
     //   key: process.env.HTTPS_CERT_PRIVKEY || 'server/ssl/socket.key'
-      cert: process.env.HTTPS_CERT_FULLCHAIN || 'server/ssl/localhost.crt',
-      key: process.env.HTTPS_CERT_PRIVKEY || 'server/ssl/localhost.key'
+    //   cert: process.env.HTTPS_CERT_FULLCHAIN || 'server/ssl/localhost.crt',
+    //   key: process.env.HTTPS_CERT_PRIVKEY || 'server/ssl/localhost.key'
+      cert: process.env.HTTPS_CERT_FULLCHAIN || '../ssl/localhost.crt',
+      key: process.env.HTTPS_CERT_PRIVKEY || '../ssl/localhost.key'
     }
   },
   // mediasoup settings.

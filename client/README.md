@@ -6,9 +6,9 @@ It's not perfect yet, and hopefully someone who can do it will help perfect it
 
 ## Demo screenshots
 
-![PC](client/assets/pc.png)
+![PC](assets/pc.png)
 
-![Mobile](client/assets/mobile.png)
+![Mobile](assets/mobile.png)
 
 ## Configuration via query parameters
 

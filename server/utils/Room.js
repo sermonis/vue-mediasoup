@@ -4,7 +4,7 @@ import protoo from "protoo-server";
 // const rtp = require('rtp.js');
 import * as throttle from "@sitespeed.io/throttle";
 import clone from "./clone.js";
-import config from "../config.js";
+import config from "../../config.js";
 import Bot from "./bot.js";
 
 /**

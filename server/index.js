@@ -11,7 +11,7 @@ import Room from "./utils/Room.js";
 import interactiveServer from "./utils/interactiveServer.js";
 import interactiveClient from "./utils/interactiveClient.js";
 
-import config from "./config.js";
+import config from "../config.js";
 
 console.log('config.js:\n%s', JSON.stringify(config, null, '  '));
 

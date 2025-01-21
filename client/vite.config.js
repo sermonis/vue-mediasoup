@@ -10,19 +10,19 @@ export default defineConfig({
     vue(),
   ],
   resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./resources', import.meta.url))
+    alias: {   
+      '@': fileURLToPath(new URL('./', import.meta.url))
     },
   },
   envPrefix: ['APP_'],
-  publicDir: 'resources/public',
+  publicDir: 'public',
   server: {
     host: '0.0.0.0',
     https: {
     //   key: fs.readFileSync('server/ssl/socket.key'),
     //   cert: fs.readFileSync('server/ssl/socket.crt'),
-      key: fs.readFileSync('server/ssl/localhost.key'),
-      cert: fs.readFileSync('server/ssl/localhost.crt'),
+      key: fs.readFileSync('../ssl/localhost.key'),
+      cert: fs.readFileSync('../ssl/localhost.crt'),
     }
   },
   build: {

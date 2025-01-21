@@ -17,7 +17,7 @@ const PC_PROPRIETARY_CONSTRAINTS = {
   // optional : [ { googDscp: true } ]
 };
 
-const EXTERNAL_VIDEO_SRC = '/resources/videos/video-audio-stereo.mp4';
+const EXTERNAL_VIDEO_SRC = '/videos/video-audio-stereo.mp4';
 
 export default class RoomClient {
   constructor(

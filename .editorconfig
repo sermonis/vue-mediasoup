@@ -1,13 +1,14 @@
+# https://habr.com/ru/articles/220131/
 root = true
 
 [*]
 charset = utf-8
 end_of_line = crlf
 indent_size = 4
-indent_style = space
+indent_style = tab
 insert_final_newline = false
 max_line_length = 120
 tab_width = 4
 
 [*.{vue,js,css}]
-indent_size = 2
+indent_size = 4

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./client/*"]
+      "@/*": ["./*"]
     }
   },
   "exclude": ["node_modules", "public"]
